@@ -1,0 +1,13 @@
+/* **************** Global Path **************** */
+@import url('./style/style.bundle.css');
+
+/* **************** Pages Path **************** */
+@import url('./style/pages/navbar.css');
+@import url('./style/pages/home.css');
+
+/* **************** Font Awesom Icon **************** */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+/* **************** Font Family **************** */
+/* @import './font/font.css'; */
+
