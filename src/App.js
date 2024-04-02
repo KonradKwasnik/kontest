@@ -20,7 +20,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-       <img src={'/media/bg/main-bg.jpg'} className="main-bg" alt=""/>
+       <img src={process.env.PUBLIC_URL + '/media/bg/main-bg.jpg'} className="main-bg" alt=""/>
       {/* <div
         className=""
         style={{
