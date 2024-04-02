@@ -20,7 +20,25 @@ function App() {
   }, []);
   return (
     <div className="App">
-      Hello World
+       <img src={'/media/bg/main-bg.jpg'} className="main-bg" alt=""/>
+      {/* <div
+        className=""
+        style={{
+          backgroundImage: `url('${process.env.PUBLIC_URL}/media/illustrations/sketchy-1/14.png')`,
+        }}
+      ></div> */}
+      <Routes>
+        <Route path="/" element={<Navbar />}>
+          <Route index  element={<Home />} />
+          <Route path="investor" element={<Investor />} />
+          <Route path="companies" element={<Companies />} />
+          <Route path="gtlra" element={<Gtlra />} />
+          <Route path="talent" element={<Talent />} />
+          <Route path="pricing" element={<Pricing />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+      <Footer />
     </div>
   );
 }
